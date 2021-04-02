@@ -1,0 +1,472 @@
+*{
+    color: white;
+    margin: 0;
+}
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.interactive{
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, red 50%,orange 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}  
+.bg2{
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+} 
+.bg3{
+    animation-duration:5s;
+}
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+
+/* BAGIAN MENU */
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+.bar{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    display: flex;
+    padding: 18px;
+}
+.menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+.menu h2{
+    background-color: white;
+    padding: 5px 4px 4px 10px;
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.menu a{
+    padding: 24px 6px 6px 20px;
+    text-decoration: none;
+    font-size: 28px;
+    color:  grey;
+    display: block;
+    transition: 0.3s;
+} 
+.menu a:hover{
+    color:white;
+} 
+.menu .closebtn{
+    position: absolute;
+    top: -8px;
+    right: 0;
+    font-size: 36px;
+    color: grey;
+}
+.menu .closebtn:hover{
+    color:black;
+}
+#jam{
+    text-align: center;
+    width: 100%; 
+    margin-left: 75%; 
+    margin-top: 6px;
+    color: black; 
+    background-color: rgba(255,255,255,0.8); 
+    padding: 6px;
+}
+.medsos{
+    width: 100%;
+    margin-right: 10px;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+.medsos img{
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+}
+.medsos img:hover{
+    filter: brightness(0) invert(0.5);
+    transform: scale(1.2);
+}
+
+/* AWALAN */
+.halaman1{
+	width: 100%;
+	height: 100vh;
+	background: url("images/logo.png");
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+    padding-top: 150px;
+}
+.halaman1 h1{
+	padding-top: 25px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 60px;
+	font-weight: 900;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+    text-shadow: 3px 3px 0px white, 8px 8px 0px rgba(0,0,0,0.8);    
+}
+.halaman1 p{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+    padding: 10px 0;
+}
+.halaman1 button{
+	background-color: rgba(255, 255, 255, 0.5);
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    border: 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.halaman1 button:focus{
+    outline: none;
+}
+.halaman1 button:hover{
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+.halaman1 img{
+	width: 250px;
+	height: auto;
+}
+
+/* BAGIAN KONTEN */
+main{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 80px 0px 0px 0px;
+}
+.page1 h1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 40px;
+}
+.kotak{
+    width: 90%;
+    padding-top: 20px;
+}
+.kotakpage{
+    width: 15%;
+    height: 30%;
+    background-color: white;
+    float: left;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+.kotakpage h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.kotakpage img{
+    width: 100%;
+}
+.kotakpage button{
+    background-color: black;
+    width: 180px;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 16px 0px 0px 0px;
+    cursor: pointer;
+}
+.kotakpage button:hover{
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.kotakpage button:focus{
+    outline: none;
+}
+aside{
+    margin: 40px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: right;
+    width: 30%;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    border-radius: 10px;
+}
+aside img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+table{
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px 8px 20px 8px;
+}
+
+/* HALAMAN 2 */
+.halaman2{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    margin-top: 2%;
+    text-align: center;
+    padding: 80px 0px 0px 0px;
+}
+.halaman2 h1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 40px;
+}
+.kotakgaleri{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.gallery{
+    display: inline-table;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px 10px 5px 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+.gallery:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #777;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.desc:hover{}
+
+/* HALAMAN 3 */
+.halaman3{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
+    width: 100%;
+    height: 60vh;
+}
+.kotakcontact{
+    display: inline-flex;
+    padding: 20px 0px 0px 40px;
+}
+.kotakall{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+.kotakall li{
+    font-size: 20px;
+}
+.kotakall a{
+    text-decoration: none;
+}
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0px;
+    text-align: center;
+}
+.footer p{
+    font-size: 18px;
+}
+
+/* UNTUK KONTEN */
+.perusahaan{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 60px;
+}
+.konten{
+    padding: 10px 0px 90px 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+.konten p{
+    font-size: 25px;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+.konten img{
+    width: 300px;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+}
+.konten  li{
+    font-size: 25px;
+    text-align: left;
+    margin: 0px 20px 0px 20px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 800px){
+    *{
+        margin: 0%;
+    }
+    body{
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    #jam{
+        width: 30%;
+        margin-left: 25px;
+    }
+    .medsos{
+    width: 50%;
+    display: block;
+    }
+    .halaman1 img{
+        width: 60%;
+        height: auto;
+    }
+    .halaman1 h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .halaman1 p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .halaman1 button{
+        width: 100px;
+        height: 40px;
+    }
+    header{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .kotak{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    aside{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    aside h2, h3{
+        font-size: 20px;
+    }
+    aside th,td{
+        font-size: 15px;
+    }
+    .page1{
+        width: 100%;
+        height: auto;
+    }
+    .page1 h1{
+        font-size: 23px;
+    }
+    .kotak{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .kotakpage{
+        width: auto;
+        height: auto;
+        padding: 55px;
+    }
+    .halaman2 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+        display: inline-block;
+    }
+    .gallery{
+        width: 95%;
+    }
+    .halaman3 {
+        width: 100%;
+        height: 100%;
+    }
+	.footer p{
+        font-size: 15px;
+    }
+    .konten{
+        width: 100%;
+        height: auto;
+    }
+    .konten h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .konten p{
+        font-size: 20px;
+    }
+    .konten img{
+        width: 300px;
+        height: auto;
+    }
+    .konten ol li{
+        font-size: 18px;
+    }
+    table{
+        font-size: 13px;
+        margin: 0px 0px 10px 0px;
+    }
+}
